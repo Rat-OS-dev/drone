@@ -1,0 +1,353 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pdrones | Real Estate Drone Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .button:hover {
+            background: #0284c7;
+        }
+
+        .section {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section > p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #64748b;
+        }
+
+        .pricing {
+            background: #e0f2fe;
+        }
+
+        .price-card {
+            background: white;
+            max-width: 450px;
+            margin: 40px auto 0;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .price {
+            font-size: 55px;
+            font-weight: bold;
+            color: #0284c7;
+            margin: 15px 0;
+        }
+
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .price-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .acreage {
+            margin-top: 20px;
+            color: #475569;
+            line-height: 1.7;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        .contact p {
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Pdrones</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero" id="home">
+
+    <h1>Pdrones</h1>
+
+    <h2>Real Estate Drone Services</h2>
+
+    <p>
+        Give your property the attention it deserves.
+        Pdrones provides affordable aerial photography,
+        raw drone video, and 3D exterior models for real estate.
+    </p>
+
+    <a href="#pricing" class="button">View Our Package</a>
+
+</section>
+
+
+<section class="section" id="services">
+
+    <h2>What We Offer</h2>
+
+    <p>
+        A simple and affordable way for real estate agents
+        to showcase their properties from above.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📸</div>
+
+            <h3>Aerial Photography</h3>
+
+            <p>
+                Capture your property from above and
+                show potential buyers the entire property.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🎥</div>
+
+            <h3>Raw Drone Video</h3>
+
+            <p>
+                Receive raw aerial footage that can be
+                used for social media, listings, and marketing.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🏠</div>
+
+            <h3>3D Exterior Model</h3>
+
+            <p>
+                Turn aerial imagery into a 3D model
+                showing the exterior of the property.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section pricing" id="pricing">
+
+    <h2>Our Real Estate Package</h2>
+
+    <p>
+        Everything you need to give your property
+        a better online presentation.
+    </p>
+
+    <div class="price-card">
+
+        <h3>Pdrones Property Package</h3>
+
+        <div class="price">$74</div>
+
+        <ul>
+            <li>✓ Aerial property photos</li>
+            <li>✓ Raw drone video</li>
+            <li>✓ 3D exterior model</li>
+            <li>✓ Digital delivery</li>
+        </ul>
+
+        <div class="acreage">
+            <strong>Acreage Pricing</strong><br><br>
+
+            Under 1 acre: <strong>$74</strong><br>
+            1–10 acres: <strong>$74 + $50 per additional acre</strong><br>
+            Over 10 acres: <strong>Custom Quote</strong>
+        </div>
+
+        <br>
+
+        <a href="#contact" class="button">Get Started</a>
+
+    </div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+    <h2>Ready to Showcase Your Property?</h2>
+
+    <p>
+        Pdrones makes professional-looking aerial property
+        media simple and affordable.
+    </p>
+
+    <a href="#pricing" class="button">View Pricing</a>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Pdrones. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
+```
